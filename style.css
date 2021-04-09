@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 3em;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.logo {
+  margin-top: 10vh;
+  margin-bottom: 8vh;
+}
+
+h1 {
+  color: var(--gray);
+  font-weight: 300;
+}
+span {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+p {
+  font-weight: 300;
+}
+
+input,
+button {
+  border-radius: 30px;
+  border: none;
+}
+
+input {
+  width: 60vw;
+  height: 5vh;
+  font-size: 1em;
+  padding-left: 2rem;
+  border: 2px solid var(--pale-blue);
+}
+input:focus {
+  outline-style: none;
+}
+
+::placeholder {
+  color: var(--gray);
+}
+
+#success {
+  color: rgb(49, 223, 49);
+  display: none;
+}
+
+#errorMsg {
+  color: var(--light-red);
+  display: none;
+}
+
+button {
+  font-weight: 700;
+  width: 60vw;
+  height: 5vh;
+  background-color: var(--blue);
+  font-size: 1em;
+  color: #fff;
+  box-shadow: 0 10px 10px var(--pale-blue);
+  cursor: pointer;
+}
+
+.dashboard img {
+  margin: 10rem 0;
+  width: 70vw;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  color: var(--blue);
+}
+
+li {
+  display: inline-block;
+}
+footer p {
+  color: var(--gray);
+}
+
+.fa {
+  border: 1px solid var(--pale-blue);
+  border-radius: 50%;
+  padding: 1.2rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.fa:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+@media (min-width: 750px) {
+  header {
+    font-size: 35px;
+  }
+  form {
+    margin-top: 5rem;
+  }
+  input {
+    width: 40vw;
+    margin-right: 2rem;
+  }
+  #errorMsg {
+    position: absolute;
+    left: 21vw;
+    top: 48vh;
+  }
+  button {
+    width: 20vw;
+  }
+  footer {
+    margin-bottom: 3rem;
+  }
+}
